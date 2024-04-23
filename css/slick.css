@@ -117,3 +117,79 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.popup-container {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+  
+.popup-content {
+    width: 90%; /* Hoặc tỷ lệ phần trăm khác theo nhu cầu */
+    max-width: 1920px; /* Điều chỉnh để phù hợp với kích thước mong muốn */
+    background: #fff;
+    padding: 40px; /* Điều chỉnh padding để phù hợp với thiết kế của bạn */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Đảm bảo rằng popup được căn giữa */
+    transform: translateY(-50%); /* Điều chỉnh này sẽ nâng popup lên một chút để căn giữa theo chiều dọc */
+    top: 50%; /* Kết hợp với transform để căn giữa */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Chỉnh sửa ở đây nếu bạn muốn nội dung theo chiều dọc */
+  }
+  
+  .popup-row {
+    display: flex;
+    width: 100%;
+  }
+  .popup-row-in {
+    margin-bottom: 15px;
+  }
+  
+  .popup-col {
+    flex: 1; /* Mỗi cột chiếm đúng một nửa chiều rộng */
+    padding: 20px; /* Điều chỉnh khoảng cách nếu cần */
+    display: flex; /* Để có thể căn giữa nội dung bên trong */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .popup-img {
+    max-width: 100%; /* Cho phép hình ảnh co giãn nhưng không vượt quá kích thước của nó */
+    height: auto; /* Để duy trì tỷ lệ gốc của hình ảnh */
+  }
+  
+  .popup-header {
+    font-size: 24px; /* Điều chỉnh kích thước font theo ý muốn */
+    margin-bottom: 1em; /* Tạo khoảng cách giữa tiêu đề và nội dung */
+    /* Thêm các thuộc tính khác nếu cần */
+}
+
+.popup-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    /* Thêm các thuộc tính khác nếu cần */
+}
+
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+  

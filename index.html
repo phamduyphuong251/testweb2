@@ -341,14 +341,15 @@ https://www.tooplate.com/view/2127-little-fashion
                             <h2 class="mb-4">Sản phẩm <span>và</span> Dịch vụ</h2>
 
                             <br class="tag-container">
-                            <p class="tag ai-chatbot">AI Chatbot</p>
-                            <p class="tag ai-training">Đào tạo về AI</p>
+                            <p class="tag ai-chatbot" id="openPopupBtn1">AI Chatbot</p>
+                            
+                            <p class="tag ai-training" id="openPopupBtn2">Đào tạo về AI</p>
                             <br>
-                            <p class="tag knowledge-management">Tư vấn quản trị tri thức</p>
-                            <p class="tag recommendation-system">Hệ thống khuyến nghị</p>
+                            <p class="tag knowledge-management" id="openPopupBtn3">Tư vấn quản trị tri thức</p>
+                            <p class="tag recommendation-system" id="openPopupBtn4">Hệ thống khuyến nghị</p>
                             <br>
-                            <p class="tag data-analysis">Phân tích dữ liệu và báo cáo</p>
-                            <p class="tag virtual-assistant">Khác</p>
+                            <p class="tag data-analysis" id="openPopupBtn5">Phân tích dữ liệu và báo cáo</p>
+                            <p class="tag virtual-assistant" id="openPopupBtn6">Khác</p>
                         </div>
 
                         <!-- <a href="products.html" class="custom-link">
@@ -477,6 +478,140 @@ https://www.tooplate.com/view/2127-little-fashion
                 </div>
             </div>
         </section>
+        <div id="aiChatbotPopup" class="popup-container" style="display:none;">
+            <div class="popup-content">
+                <span class="close-popup 1">&times;</span>
+                <div class="popup-row">
+                    <div class="popup-col">
+                        <img src="images/AI Chatbot.png" alt="AI Chatbot" class="popup-img"/>
+                    </div>
+                    <div class="popup-col">
+                        <div class="product-info d-flex">
+                            <div>
+                                <p class="tagged ai-chatbot-popup">AI Chatbot</p>
+                                <p></p>
+                                <p style="font-size:medium; color:#00274c;">Chatbot J4U (just for you) - giải pháp chatbot AI tự động hóa tương tác với khách hàng 24/7. Tích hợp ERP, website, mạng xã hội, tạo FAQ/NAQ chính xác, thu thập dữ liệu và cung cấp insight khách hàng. Khả năng tùy biến cao về NLP, thương hiệu và thiết kế cá nhân hoá cho từng doanh nghiệp.
+                                    <br>
+                                    <br>
+                                    Trải nghiệm tại website:  <a href="https://j4u.chat/" target="_blank" style="color:#ffcb02;">j4u.chat</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="aitrainingPopup" class="popup-container" style="display:none;">
+            <div class="popup-content">
+                <span class="close-popup 2">&times;</span>
+                <div class="popup-row">
+                    <div class="popup-col">
+                        <img src="images/training.jpeg" alt="TRAINING" class="popup-img"/>
+                    </div>
+                    <div class="popup-col">
+                        <div class="product-info d-flex">
+                            <div>
+                                <p class="tagged ai-training-popup">Đào tạo về AI</p>
+                                <p></p>
+                                <p style="font-size:medium; color:#00274c;">AI Works cung cấp các khóa đào tạo chuyên sâu về AI và kỹ thuật phân tích dữ liệu nâng cao. Ngoài ra, chúng tôi cũng có khóa học tổng quan về AI phù hợp cho nhiều đối tượng. Các khóa học được thiết kế linh hoạt với hình thức trực tiếp hoặc trực tuyến, mang đến cho học viên những kiến thức thực tiễn và hiệu quả cao.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tuVanQTTTPopup" class="popup-container" style="display:none;">
+            <div class="popup-content">
+                <span class="close-popup 3">&times;</span>
+                <div class="popup-row">
+                    <div class="popup-col">
+                        <img src="images/knowledge.jpeg" alt="KNOWLEDGE" class="popup-img"/>
+                    </div>
+                    <div class="popup-col">
+                        <div class="product-info d-flex">
+                            <div>
+                                <p class="tagged knowledge-management-popup">Tư vấn quản trị tri thức</p>
+                                <p></p>
+                                <p style="font-size:medium; color:#00274c;">Tư vấn quản trị tri thức - tổ chức, quản lý và khai thác hiệu quả dữ liệu khách hàng. Xây dựng giải pháp chuyển đổi số áp dụng AI cho doanh nghiệp. Hiện tại, AI Works đang là đối tác chính của PVU (Trường Đại Học Dầu Khí Việt Nam) về lĩnh vực tư vấn quản trị tri thức bằng AI.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="recommendationsystemPopup" class="popup-container" style="display:none;">
+            <div class="popup-content">
+                <span class="close-popup 4">&times;</span>
+                <div class="popup-row">
+                    <div class="popup-col">
+                        <img src="images/recommend.jpeg" alt="RECOMMEND" class="popup-img"/>
+                    </div>
+                    <div class="popup-col">
+                        <div class="product-info d-flex">
+                            <div>
+                                <p class="tagged recommendation-system-popup">Hệ thống khuyến nghị</p>
+                                <p></p>
+                                <p style="font-size:medium; color:#00274c;">Hệ thống khuyến nghị thông minh DOE (Design Of Experiment) dành cho ngành công nghiệp hóa chất. Tích hợp thuật toán dữ liệu 4 chiều tiên tiến, DOE phân tích và dự báo chính xác dữ liệu đầu vào, đề xuất phương án tối ưu cho từng trường hợp cụ thể. Mang lại lợi thế cạnh tranh từ dữ liệu, DOE định hình con đường đổi mới cho ngành công nghiệp hóa chất.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dataanalysisPopup" class="popup-container" style="display:none;">
+            <div class="popup-content">
+                <span class="close-popup 5">&times;</span>
+                <div class="popup-row">
+                    <div class="popup-col">
+                        <img src="images/ptdl.jpeg" alt="PTDL" class="popup-img"/>
+                    </div>
+                    <div class="popup-col">
+                        <div class="product-info d-flex">
+                            <div>
+                                <p class="tagged ai-chatbot-popup">Phân tích dữ liệu và báo cáo</p>
+                                <p></p>
+                                <p style="font-size:medium; color:#00274c;">Phân tích dữ liệu và báo cáo bằng AI - AI Works ứng dụng các kỹ thuật AI, phân tích tiên tiến để khai thác triệt để giá trị từ dữ liệu phức tạp. Đội ngũ chuyên gia sẽ xử lý, truy vấn và tạo báo cáo chi tiết dựa trên phân tích sâu sắc, giúp doanh nghiệp đưa ra quyết định chiến lược hiệu quả dựa trên dữ liệu.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="virtualassistantPopup" class="popup-container" style="display:none;">
+            <div class="popup-content">
+                <span class="close-popup 6">&times;</span>
+                <div class="popup-row">
+                    <div class="popup-col">
+                        <img src="images/khac.jpg" alt="KHAC" class="popup-img"/>
+                    </div>
+                    <div class="popup-col">
+                        <div class="product-info d-flex">
+                            <div>
+                                <p class="tagged virtual-assistant-popup">Các sản phẩm AI khác</p>
+                                <p></p>
+                                <p style="font-size:medium; color:#00274c;">AI Works hiện đang nghiên cứu và phát triển các giải pháp AI đa dạng phục vụ nhiều lĩnh vực khác nhau. Trong đó có hệ thống khuyến nghị sản phẩm/dịch vụ thông minh, phân tích và dự báo dữ liệu lớn bằng học máy, AI, hệ thống tự động hóa quy trình và ra quyết định dựa trên AI. Ngoài ra, chúng tôi cũng đang nghiên cứu các phần mềm nhận dạng đối tượng, khuôn mặt sử dụng AI và các ứng dụng AI cho game, giải trí như nhân vật ảo, nội dung cá nhân hóa.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -531,7 +666,7 @@ https://www.tooplate.com/view/2127-little-fashion
     <script src="js/jQuery.headroom.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
-
+    <script src="js/popup.js"></script>
 </body>
 
 </html>

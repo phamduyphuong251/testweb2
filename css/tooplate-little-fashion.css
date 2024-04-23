@@ -1224,9 +1224,30 @@ button:focus:not(:focus-visible) {
   transform: translateY(-2px);
 }
 
-.ai-chatbot { background-color: var(--dark-color); }
+
+.tagged {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  /* cursor: pointer; */
+  transition: transform 0.3s;
+}
+.ai-chatbot { background-color: var(--dark-color);}
 .ai-training { background-color: var(--primary-color); }
-.knowledge-management { background-color: var(--dark-color); }
-.recommendation-system { background-color: var(--primary-color); }
+.knowledge-management { background-color: var(--primary-color); }
+.recommendation-system { background-color: var(--dark-color); }
 .data-analysis { background-color: var(--dark-color);}
 .virtual-assistant { background-color: var(--primary-color); }
+
+.ai-chatbot-popup { background-color: var(--dark-color); color: var(--primary-color); }
+.ai-training-popup { background-color: var(--primary-color); color: var(--dark-color); }
+.knowledge-management-popup { background-color: var(--primary-color); color: var(--dark-color); }
+.recommendation-system-popup { background-color: var(--dark-color); color: var(--primary-color); }
+.data-analysis-popup { background-color: var(--dark-color); color: var(--primary-color); }
+.virtual-assistant-popup { background-color: var(--primary-color); color: var(--dark-color); }
+
